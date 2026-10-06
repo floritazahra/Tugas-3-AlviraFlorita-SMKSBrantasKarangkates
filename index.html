@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Digital Responsive - Alvira Florita Zahra</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-wrapper">
+
+        <!-- Kartu Profil Utama -->
+        <article class="profile-card">
+
+            <!-- Kolom Kiri / Header Profil -->
+            <header class="card-aside">
+
+                <!-- Tombol Tema & Bahasa -->
+                <div class="toolbar">
+                    <button id="btnToggleTema" class="btn-tema">
+                        ☀️ Mode Terang
+                    </button>
+
+                    <button id="btnBahasa" class="btn-tema" aria-label="Ganti bahasa / Change language">
+                        🌐 EN
+                    </button>
+                </div>
+
+                <div class="avatar-box" aria-hidden="true">
+                    👩🏻‍💻
+                </div>
+
+                <h1 class="student-name">
+                    Alvira Florita Zahra
+                </h1>
+
+                <p class="student-role" data-i18n="role">
+                    Junior Web Developer
+                </p>
+
+                <p class="student-school">
+                    SMK Brantas Karangkates — PPLG
+                </p>
+
+                <a href="mailto:siswa@smkbrantaskarangkates.sch.id" id="btnKontak" class="btn-contact"
+                    data-i18n="kirimPesan">
+                    Kirim Pesan
+                </a>
+
+            </header>
+
+            <!-- Kolom Kanan / Konten Detail -->
+            <section class="card-content">
+
+                <!-- Tentang Saya -->
+                <div class="bio-section">
+
+                    <h2 class="section-heading" data-i18n="tentangJudul">
+                        Tentang Saya
+                    </h2>
+
+                    <p class="bio-text" data-i18n="tentangIsi">
+                        Siswa kelas 10 Rekayasa Perangkat Lunak
+                        yang berfokus mendalami arsitektur Front-End
+                        modern, tata letak CSS Flexbox, serta prinsip
+                        Mobile-First Responsive Design standar industri.
+                    </p>
+
+                </div>
+
+                <!-- Keahlian dan Kompetensi -->
+                <div class="skills-section">
+
+                    <h2 class="section-heading" data-i18n="keahlianJudul">
+                        Keahlian &amp; Kompetensi
+                    </h2>
+
+                    <div class="skill-matrix">
+
+                        <div class="skill-badge">
+                            HTML5 Semantic
+                        </div>
+
+                        <div class="skill-badge">
+                            CSS3 Flexbox
+                        </div>
+
+                        <div class="skill-badge">
+                            Responsive Design
+                        </div>
+
+                        <div class="skill-badge">
+                            Media Queries
+                        </div>
+
+                        <div class="skill-badge">
+                            Chrome DevTools
+                        </div>
+
+                        <div class="skill-badge">
+                            Git &amp; GitHub (Next)
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <!-- Modal Kontak -->
+    <div id="modalKontak" class="modal-overlay">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="judulModal">
+            <h2 id="judulModal" data-i18n="modalJudul">Kirim Pesan</h2>
+            <p data-i18n="modalIsi">Silakan hubungi saya melalui email: siswa@smkbrantaskarangkates.sch.id</p>
+
+            <button id="btnTutupModal" class="btn-tutup" data-i18n="tutup">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
